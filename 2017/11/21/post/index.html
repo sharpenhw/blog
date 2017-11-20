@@ -105,13 +105,16 @@
 
 
 
+<meta name="description" content="安装前比较 hexo：基于NodeJS hugo：基于go语言  安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages 总结在Mac上搭建HEXO遇到的坑 坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。  坑二：安装完成后，一直显示 hexo comma">
 <meta property="og:type" content="article">
 <meta property="og:title" content="post">
 <meta property="og:url" content="http://sharpenhw.github.io/2017/11/21/post/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2017-11-20T16:23:18.000Z">
+<meta property="og:description" content="安装前比较 hexo：基于NodeJS hugo：基于go语言  安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages 总结在Mac上搭建HEXO遇到的坑 坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。  坑二：安装完成后，一直显示 hexo comma">
+<meta property="og:updated_time" content="2017-11-20T16:55:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="post">
+<meta name="twitter:description" content="安装前比较 hexo：基于NodeJS hugo：基于go语言  安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages 总结在Mac上搭建HEXO遇到的坑 坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。  坑二：安装完成后，一直显示 hexo comma">
 
 
 
@@ -416,7 +419,21 @@
       
 
       
-        
+        <h1 id="安装前比较"><a href="#安装前比较" class="headerlink" title="安装前比较"></a>安装前比较</h1><ol>
+<li>hexo：基于NodeJS</li>
+<li>hugo：基于go语言</li>
+</ol>
+<h1 id="安装过程简介"><a href="#安装过程简介" class="headerlink" title="安装过程简介"></a>安装过程简介</h1><p>1.（brew/git之前安装过了）安装npm<br>2.安装nvm<br>3.配置github pages</p>
+<h1 id="总结在Mac上搭建HEXO遇到的坑"><a href="#总结在Mac上搭建HEXO遇到的坑" class="headerlink" title="总结在Mac上搭建HEXO遇到的坑"></a>总结在Mac上搭建HEXO遇到的坑</h1><ul>
+<li><p>坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。</p>
+</li>
+<li><p>坑二：安装完成后，一直显示 hexo command not found 错误， 主要是node的版本问题 可以通过nvm来控制一下node的版本来解决<br><a href="http://www.gengzhibo.com/2017/04/23/Hexo安装后的小问题/index.html" target="_blank" rel="external">参考</a>：</p>
+</li>
+<li><p>坑三：配置github时候可能出现css没加载的问题，解决办法是在_config文件里，修改ROOT（key: value之间有空格）</p>
+</li>
+<li>坑四：配置自己域名的时候，每次更换主题一定要记得在对应主题的source目录下新建CNAME文件，否则 github.io上格式错误</li>
+</ul>
+
       
     </div>
     
@@ -467,22 +484,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/11/12/MyFistBlog/" rel="next" title="">
-                <i class="fa fa-chevron-left"></i> 
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -540,8 +541,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatardk.jpg"
@@ -558,7 +568,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
@@ -618,6 +628,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装前比较"><span class="nav-number">1.</span> <span class="nav-text">安装前比较</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装过程简介"><span class="nav-number">2.</span> <span class="nav-text">安装过程简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结在Mac上搭建HEXO遇到的坑"><span class="nav-number">3.</span> <span class="nav-text">总结在Mac上搭建HEXO遇到的坑</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
