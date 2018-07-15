@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>Sharpen | less is more</title>
+    <title>DockerHub 源配置 | Sharpen</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,18 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
+    <meta name="description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Sharpen | less is more">
-    <meta name="twitter:description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
+    <meta name="twitter:title" content="DockerHub 源配置 | Sharpen">
+    <meta name="twitter:description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Sharpen | less is more">
-    <meta property="og:description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
+    <meta property="og:title" content="DockerHub 源配置 | Sharpen">
+    <meta property="og:description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
 
     
     <meta name="author" content="Sharpen">
@@ -38,7 +38,7 @@
     <link rel="alternate" type="application/rss+xml" title="Sharpen" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://sharpenhw.github.io/2018/07/16/DockerHub/"/>
+    <link rel="canonical" href="http://sharpenhw.github.io/2018/03/09/DockerHub/"/>
 
                  
 </head>
@@ -142,17 +142,17 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-07-15T16:26:40.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2018-03-09T08:22:18.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-meta__tags tags">于  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">DockerHub 源配置</h1>
   </header>
 
   <section class="post">
-    <h1 id="DockerHub-加速器"><a href="#DockerHub-加速器" class="headerlink" title="DockerHub 加速器"></a>DockerHub 加速器</h1><p>##1.腾讯ECS<br>适用于 Centos7 版本。<br>修改 Docker 配置文件 vi /etc/sysconfig/docker，如下：<br> OPTIONS=’–registry-mirror=<a href="https://mirror.ccs.tencentyun.com" target="_blank" rel="external">https://mirror.ccs.tencentyun.com</a>‘</p>
+    <p>##1.腾讯ECS<br>适用于 Centos7 版本。<br>修改 Docker 配置文件 vi /etc/sysconfig/docker，如下：<br> OPTIONS=’–registry-mirror=<a href="https://mirror.ccs.tencentyun.com" target="_blank" rel="external">https://mirror.ccs.tencentyun.com</a>‘</p>
 <p>##2.DAOCloud源<br>Docker 加速器是什么，我需要使用吗？<br>使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络原因，拉取镜像的过程非常耗时，严重影响使用 Docker 的体验。因此 DaoCloud 推出了加速器工具解决这个难题，通过智能路由和缓存机制，极大提升了国内网络访问 Docker Hub 的速度。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://26ee402e.m.daocloud.io</span><br></pre></td></tr></table></figure>
 <p>该脚本可以将 –registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，</p>
@@ -169,15 +169,14 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Newer Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/PythonMulti/" title=""></a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/博客里程碑/" title="博客里程碑">博客里程碑</a></h2>
                 <p class="excerpt">
                 
-                python多版本管理总结python有两个大的版本2.X和3.x， 而且这两个版本是不完全兼容的。所以就面临了版本管理的问题。常见的版本管理有以下工具：virtualenv, pyenv, anaconda. 下面分别介绍这三种的用法，最后作简单的总结。
-##1.virtualenv
-123456
+                刚看完2018世界杯，边看边把博客倒腾了一下。每次看到别人的优秀的博客，收到启发后暗暗称奇，可是自己却总是没有养成写博客的习惯。希望这一切开始准备工作都做好了以后，能够踏踏实实的写博客，记录自己的学习技术的点滴，记录自己看过的书，走过的路，爱过的人！
+
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-07-15T16:27:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/07/16/PythonMulti/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2018-07-15T17:00:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/07/16/博客里程碑/">继续阅读</a></div>
                            
             </div>
         
