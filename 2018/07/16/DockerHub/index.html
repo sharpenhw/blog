@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>hexo使用总结 | Sharpen</title>
+    <title>Sharpen | less is more</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,39 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta name="description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="hexo使用总结 | Sharpen">
-    <meta name="twitter:description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta name="twitter:title" content="Sharpen | less is more">
+    <meta name="twitter:description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="hexo使用总结 | Sharpen">
-    <meta property="og:description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta property="og:title" content="Sharpen | less is more">
+    <meta property="og:description" content="DockerHub 加速器##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜">
 
     
     <meta name="author" content="Sharpen">
@@ -59,7 +38,7 @@ hugo：基于go语言
     <link rel="alternate" type="application/rss+xml" title="Sharpen" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://sharpenhw.github.io/2017/11/21/hexo/"/>
+    <link rel="canonical" href="http://sharpenhw.github.io/2018/07/16/DockerHub/"/>
 
                  
 </head>
@@ -163,30 +142,22 @@ hugo：基于go语言
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-11-20T16:23:18.000Z" class="post-list__meta--date date">2017-11-21</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2018-07-15T16:26:40.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-meta__tags tags">于  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">hexo使用总结</h1>
+    <h1 class="post-title"></h1>
   </header>
 
   <section class="post">
-    <h1 id="安装前比较"><a href="#安装前比较" class="headerlink" title="安装前比较"></a>安装前比较</h1><ol>
-<li>hexo：基于NodeJS</li>
-<li>hugo：基于go语言</li>
-</ol>
-<h1 id="安装过程简介"><a href="#安装过程简介" class="headerlink" title="安装过程简介"></a>安装过程简介</h1><p>1.（brew/git之前安装过了）安装npm<br>2.安装nvm<br>3.配置github pages</p>
-<h1 id="总结在Mac上搭建HEXO遇到的坑"><a href="#总结在Mac上搭建HEXO遇到的坑" class="headerlink" title="总结在Mac上搭建HEXO遇到的坑"></a>总结在Mac上搭建HEXO遇到的坑</h1><ul>
-<li><p>坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。</p>
-</li>
-<li><p>坑二：安装完成后，一直显示 hexo command not found 错误， 主要是node的版本问题 可以通过nvm来控制一下node的版本来解决<br><a href="http://www.gengzhibo.com/2017/04/23/Hexo安装后的小问题/index.html" target="_blank" rel="external">参考</a>：</p>
-</li>
-<li><p>坑三：配置github时候可能出现css没加载的问题，解决办法是在_config文件里，修改ROOT（key: value之间有空格）</p>
-</li>
-<li>坑四：配置自己域名的时候，每次更换主题一定要记得在对应主题的source目录下新建CNAME文件，否则 github.io上格式错误</li>
-</ul>
+    <h1 id="DockerHub-加速器"><a href="#DockerHub-加速器" class="headerlink" title="DockerHub 加速器"></a>DockerHub 加速器</h1><p>##1.腾讯ECS<br>适用于 Centos7 版本。<br>修改 Docker 配置文件 vi /etc/sysconfig/docker，如下：<br> OPTIONS=’–registry-mirror=<a href="https://mirror.ccs.tencentyun.com" target="_blank" rel="external">https://mirror.ccs.tencentyun.com</a>‘</p>
+<p>##2.DAOCloud源<br>Docker 加速器是什么，我需要使用吗？<br>使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络原因，拉取镜像的过程非常耗时，严重影响使用 Docker 的体验。因此 DaoCloud 推出了加速器工具解决这个难题，通过智能路由和缓存机制，极大提升了国内网络访问 Docker Hub 的速度。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://26ee402e.m.daocloud.io</span><br></pre></td></tr></table></figure>
+<p>该脚本可以将 –registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，</p>
+<p>##3.阿里dockerHub源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/docker/daemon.json &lt;&lt;-&apos;EOF&apos;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://p8b4jflv.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
 
   </section>
 
@@ -198,6 +169,22 @@ hugo：基于go语言
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/PythonMulti/" title=""></a></h2>
+                <p class="excerpt">
+                
+                python多版本管理总结python有两个大的版本2.X和3.x， 而且这两个版本是不完全兼容的。所以就面临了版本管理的问题。常见的版本管理有以下工具：virtualenv, pyenv, anaconda. 下面分别介绍这三种的用法，最后作简单的总结。
+##1.virtualenv
+123456
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-07-15T16:27:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/07/16/PythonMulti/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
                 <h2 class="post-list__post-title post-title"><a href="/2018/01/14/2017年终总结/" title="2017年终总结">2017年终总结</a></h2>
                 <p class="excerpt">
                 
@@ -207,10 +194,8 @@ hugo：基于go语言
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-01-14T13:26:31.000Z" class="post-list__meta--date date">2018-01-14</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/01/14/2017年终总结/">继续阅读</a></div>
-                           
+                       
             </div>
-        
-        
         
      
    
