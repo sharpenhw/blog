@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>DockerHub 源配置 | Sharpen</title>
+    <title>树莓派网络设置-外网登录 | Sharpen</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,18 +12,60 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
+    <meta name="description" content="目标在任何能连上互联网的主机上，打开浏览器，就能ssh到家里的树莓派，执行任意操作
+具体操作
+第一步：端口映射
+第二步：申请外网IP
+（路由器的wan口IP不能使10、192、172、100开头）
+
+
+第三步：动态IP绑定
+申请花生壳的壳域名
+自己写脚本每隔一段时间自动更新DNS解析记录
+
+
+第四步：安装shellinabox
+
+效果展示注意事项
+安全加固，为了防止黑客">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="DockerHub 源配置 | Sharpen">
-    <meta name="twitter:description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
+    <meta name="twitter:title" content="树莓派网络设置-外网登录 | Sharpen">
+    <meta name="twitter:description" content="目标在任何能连上互联网的主机上，打开浏览器，就能ssh到家里的树莓派，执行任意操作
+具体操作
+第一步：端口映射
+第二步：申请外网IP
+（路由器的wan口IP不能使10、192、172、100开头）
+
+
+第三步：动态IP绑定
+申请花生壳的壳域名
+自己写脚本每隔一段时间自动更新DNS解析记录
+
+
+第四步：安装shellinabox
+
+效果展示注意事项
+安全加固，为了防止黑客">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="DockerHub 源配置 | Sharpen">
-    <meta property="og:description" content="##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
-##2.DAOCloud源Docker 加速器是什么，我需要使用吗？使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络">
+    <meta property="og:title" content="树莓派网络设置-外网登录 | Sharpen">
+    <meta property="og:description" content="目标在任何能连上互联网的主机上，打开浏览器，就能ssh到家里的树莓派，执行任意操作
+具体操作
+第一步：端口映射
+第二步：申请外网IP
+（路由器的wan口IP不能使10、192、172、100开头）
+
+
+第三步：动态IP绑定
+申请花生壳的壳域名
+自己写脚本每隔一段时间自动更新DNS解析记录
+
+
+第四步：安装shellinabox
+
+效果展示注意事项
+安全加固，为了防止黑客">
 
     
     <meta name="author" content="Sharpen">
@@ -38,7 +80,7 @@
     <link rel="alternate" type="application/rss+xml" title="Sharpen" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://sharpenhw.github.io/2018/03/09/DockerHub/"/>
+    <link rel="canonical" href="http://sharpenhw.github.io/2018/07/16/树莓派外网访问/"/>
 
                  
 </head>
@@ -142,22 +184,35 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-03-09T08:22:18.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2018-07-15T17:00:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/raspberry/">raspberry</a>
+ </span>
       <span class="page-pv">
        No. <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">DockerHub 源配置</h1>
+    <h1 class="post-title">树莓派网络设置-外网登录</h1>
   </header>
 
   <section class="post">
-    <p>##1.腾讯ECS<br>适用于 Centos7 版本。<br>修改 Docker 配置文件 vi /etc/sysconfig/docker，如下：<br> OPTIONS=’–registry-mirror=<a href="https://mirror.ccs.tencentyun.com" target="_blank" rel="external">https://mirror.ccs.tencentyun.com</a>‘</p>
-<p>##2.DAOCloud源<br>Docker 加速器是什么，我需要使用吗？<br>使用 Docker 的时候，需要经常从官方获取镜像，但是由于显而易见的网络原因，拉取镜像的过程非常耗时，严重影响使用 Docker 的体验。因此 DaoCloud 推出了加速器工具解决这个难题，通过智能路由和缓存机制，极大提升了国内网络访问 Docker Hub 的速度。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://26ee402e.m.daocloud.io</span><br></pre></td></tr></table></figure>
-<p>该脚本可以将 –registry-mirror 加入到你的 Docker 配置文件 /etc/docker/daemon.json 中。适用于 Ubuntu14.04、Debian、CentOS6 、CentOS7、Fedora、Arch Linux、openSUSE Leap 42.1，</p>
-<p>##3.阿里dockerHub源</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/docker/daemon.json &lt;&lt;-&apos;EOF&apos;</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://p8b4jflv.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+    <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>在任何能连上互联网的主机上，打开浏览器，就能ssh到家里的树莓派，执行任意操作</p>
+<h2 id="具体操作"><a href="#具体操作" class="headerlink" title="具体操作"></a>具体操作</h2><ul>
+<li>第一步：端口映射</li>
+<li>第二步：申请外网IP<ul>
+<li>（路由器的wan口IP不能使10、192、172、100开头）</li>
+</ul>
+</li>
+<li>第三步：动态IP绑定<ul>
+<li>申请花生壳的壳域名</li>
+<li>自己写脚本每隔一段时间自动更新DNS解析记录</li>
+</ul>
+</li>
+<li>第四步：安装shellinabox</li>
+</ul>
+<h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>安全加固，为了防止黑客</li>
+</ul>
 
   </section>
 
@@ -169,27 +224,17 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">新しい記事</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/树莓派外网访问/" title="树莓派网络设置-外网登录">树莓派网络设置-外网登录</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/博客里程碑/" title="博客里程碑">博客里程碑</a></h2>
                 <p class="excerpt">
                 
-                目标在任何能连上互联网的主机上，打开浏览器，就能ssh到家里的树莓派，执行任意操作
-具体操作
-第一步：端口映射
-第二步：申请外网IP
-（路由器的wan口IP不能使10、192、172、100开头）
-
-
-第三步：动态IP绑定
-申请花生壳的壳域名
-自己写脚本每隔一段时间自动更新DNS解析记录
-
-
-第四步
+                刚看完2018世界杯，边看边把博客倒腾了一下。
+每次看到别人的优秀的博客，总是暗暗称奇！可是自己多年来却总也没能养成写博客的习惯。闲来无事，思考一下写博客的意义，所谓名不正则言不顺，言不顺则事不成。
+最早开始写博客是为了记录项目的分析过程，当时做了一个开源的二次开发项目，主要记录了一些代码的阅读分析
                 &hellip;
                 </p>
                 <div class="post-list__meta"><time datetime="2018-07-15T17:00:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/raspberry/">raspberry</a>
-</span><a class="btn-border-small" href="/2018/07/16/树莓派外网访问/">继续阅读</a></div>
+  <a class="tag-link" href="/tags/daodao/">daodao</a>
+</span><a class="btn-border-small" href="/2018/07/16/博客里程碑/">继续阅读</a></div>
                            
             </div>
         
@@ -197,15 +242,14 @@
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">以前の記事</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/01/14/2017年终总结/" title="2017年终总结">2017年终总结</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/03/09/DockerHub/" title="DockerHub 源配置">DockerHub 源配置</a></h2>
                 <p class="excerpt">
                 
-                0x01 序按照惯例，每年都会给自己写一个年终总结，总结一下这一年自己的收获和不足，停下来反思一下这一年走的路。2017年是一个gap year，是我从校园到职场进行过渡的一年。
-0x02 成长技术
-毕设项目从大量（40T)流量包中提取用户行为日志，数学建模分析用户行为习惯并进行流量分类和预测等，主
+                ##1.腾讯ECS适用于 Centos7 版本。修改 Docker 配置文件 vi /etc/sysconfig/docker，如下： OPTIONS=’–registry-mirror=https://mirror.ccs.tencentyun.com‘
+##2.DAOCloud源Docker 加
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-14T13:26:31.000Z" class="post-list__meta--date date">2018-01-14</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/01/14/2017年终总结/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2018-03-09T08:22:18.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/03/09/DockerHub/">继续阅读</a></div>
                        
             </div>
         
