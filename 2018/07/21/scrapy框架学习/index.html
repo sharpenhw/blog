@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>hexo使用总结 | Sharpen</title>
+    <title>Sharpen | less is more</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,39 +12,30 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta name="description" content="scrapy框架学习框架图
+downloader用来下载输入url的
+Spiders用来将下载的reponse信息进行解析的
+item在item类中定义好需要从response中提取的属性
+pipeline管道，将爬取完成后item进行自定义的处理，比如持久化到DB中
+settings对整个爬虫进行设置，例如深度设置">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="hexo使用总结 | Sharpen">
-    <meta name="twitter:description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta name="twitter:title" content="Sharpen | less is more">
+    <meta name="twitter:description" content="scrapy框架学习框架图
+downloader用来下载输入url的
+Spiders用来将下载的reponse信息进行解析的
+item在item类中定义好需要从response中提取的属性
+pipeline管道，将爬取完成后item进行自定义的处理，比如持久化到DB中
+settings对整个爬虫进行设置，例如深度设置">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="hexo使用总结 | Sharpen">
-    <meta property="og:description" content="安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
-
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma">
+    <meta property="og:title" content="Sharpen | less is more">
+    <meta property="og:description" content="scrapy框架学习框架图
+downloader用来下载输入url的
+Spiders用来将下载的reponse信息进行解析的
+item在item类中定义好需要从response中提取的属性
+pipeline管道，将爬取完成后item进行自定义的处理，比如持久化到DB中
+settings对整个爬虫进行设置，例如深度设置">
 
     
     <meta name="author" content="Sharpen">
@@ -59,7 +50,7 @@ hugo：基于go语言
     <link rel="alternate" type="application/rss+xml" title="Sharpen" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://sharpenhw.github.io/2017/11/21/hexo/"/>
+    <link rel="canonical" href="http://sharpenhw.github.io/2018/07/21/scrapy框架学习/"/>
 
                  
 </head>
@@ -163,30 +154,22 @@ hugo：基于go语言
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2017-11-20T16:23:18.000Z" class="post-list__meta--date date">2017-11-21</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <time datetime="2018-07-21T03:23:11.000Z" class="post-list__meta--date date">2018-07-21</time> &#8226; <span class="post-meta__tags tags">于  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">hexo使用总结</h1>
+    <h1 class="post-title"></h1>
   </header>
 
   <section class="post">
-    <h1 id="安装前比较"><a href="#安装前比较" class="headerlink" title="安装前比较"></a>安装前比较</h1><ol>
-<li>hexo：基于NodeJS</li>
-<li>hugo：基于go语言</li>
-</ol>
-<h1 id="安装过程简介"><a href="#安装过程简介" class="headerlink" title="安装过程简介"></a>安装过程简介</h1><p>1.（brew/git之前安装过了）安装npm<br>2.安装nvm<br>3.配置github pages</p>
-<h1 id="总结在Mac上搭建HEXO遇到的坑"><a href="#总结在Mac上搭建HEXO遇到的坑" class="headerlink" title="总结在Mac上搭建HEXO遇到的坑"></a>总结在Mac上搭建HEXO遇到的坑</h1><ul>
-<li><p>坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。</p>
-</li>
-<li><p>坑二：安装完成后，一直显示 hexo command not found 错误， 主要是node的版本问题 可以通过nvm来控制一下node的版本来解决<br><a href="http://www.gengzhibo.com/2017/04/23/Hexo安装后的小问题/index.html" target="_blank" rel="external">参考</a>：</p>
-</li>
-<li><p>坑三：配置github时候可能出现css没加载的问题，解决办法是在_config文件里，修改ROOT（key: value之间有空格）</p>
-</li>
-<li>坑四：配置自己域名的时候，每次更换主题一定要记得在对应主题的source目录下新建CNAME文件，否则 github.io上格式错误</li>
-</ul>
+    <h1 id="scrapy框架学习"><a href="#scrapy框架学习" class="headerlink" title="scrapy框架学习"></a>scrapy框架学习</h1><h2 id="框架图"><a href="#框架图" class="headerlink" title="框架图"></a>框架图</h2><p><img src="media/15321433910208/15326829532135.jpg" alt=""></p>
+<h2 id="downloader"><a href="#downloader" class="headerlink" title="downloader"></a>downloader</h2><p>用来下载输入url的</p>
+<h2 id="Spiders"><a href="#Spiders" class="headerlink" title="Spiders"></a>Spiders</h2><p>用来将下载的reponse信息进行解析的</p>
+<h2 id="item"><a href="#item" class="headerlink" title="item"></a>item</h2><p>在item类中定义好需要从response中提取的属性</p>
+<h2 id="pipeline"><a href="#pipeline" class="headerlink" title="pipeline"></a>pipeline</h2><p>管道，将爬取完成后item进行自定义的处理，比如持久化到DB中</p>
+<h2 id="settings"><a href="#settings" class="headerlink" title="settings"></a>settings</h2><p>对整个爬虫进行设置，例如深度设置</p>
 
   </section>
 
@@ -198,15 +181,17 @@ hugo：基于go语言
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Newer Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/01/14/2017年终总结/" title="2017年终总结">2017年终总结</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/26/RabbitMQ 总结/" title=""></a></h2>
                 <p class="excerpt">
                 
-                0x01 序按照惯例，每年都会给自己写一个年终总结，总结一下这一年自己的收获和不足，停下来反思一下这一年走的路。2017年是一个gap year，是我从校园到职场进行过渡的一年。
-0x02 成长技术
-毕设项目从大量（40T)流量包中提取用户行为日志，数学建模分析用户行为习惯并进行流量分类和预测等，主
+                RabbitMQ 总结最近在工作中因为要用到消息队列，所以简单学习了一下，把rabbitmq的官方文档学习了一遍，代码运行了一遍，收获颇丰，遂总结一下学到的这些知识点。
+关于角色
+
+P:发布者（producer）是发布消息的应用程序。
+X：交换机（exchange）发布者只需要把消息发送给一个交换机
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-14T13:26:31.000Z" class="post-list__meta--date date">2018-01-14</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/01/14/2017年终总结/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2018-07-26T06:18:01.000Z" class="post-list__meta--date date">2018-07-26</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2018/07/26/RabbitMQ 总结/">继续阅读</a></div>
                            
             </div>
         
@@ -214,17 +199,17 @@ hugo：基于go语言
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Older Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2017/03/11/PythonMulti/" title="Python 多版本管理">Python 多版本管理</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/07/16/博客里程碑/" title="博客里程碑">博客里程碑</a></h2>
                 <p class="excerpt">
                 
-                python有两个大的版本2.X和3.x， 而且这两个版本是不完全兼容的。所以就面临了版本管理的问题。常见的版本管理有以下工具：virtualenv, pyenv, anaconda. 下面分别介绍这三种的用法，最后作简单的总结。
-##1.virtualenv
-123456789pip3 insta
+                刚看完2018世界杯，边看边把博客倒腾了一下。
+每次看到别人的优秀的博客，总是暗暗称奇！可是自己多年来却总也没能养成写博客的习惯。闲来无事，思考一下写博客的意义，所谓名不正则言不顺，言不顺则事不成。
+最早开始写博客是为了记录项目的分析过程，当时做了一个开源的二次开发项目，主要记录了一些代码的阅读分析
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2017-03-10T16:23:18.000Z" class="post-list__meta--date date">2017-03-11</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/python/">python</a>
-</span><a class="btn-border-small" href="/2017/03/11/PythonMulti/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2018-07-15T17:00:24.000Z" class="post-list__meta--date date">2018-07-16</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/daodao/">daodao</a>
+</span><a class="btn-border-small" href="/2018/07/16/博客里程碑/">继续阅读</a></div>
                        
             </div>
         

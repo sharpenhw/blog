@@ -141,37 +141,19 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/11/21/hexo/" title="link to post.title">hexo使用总结</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/07/27/15325858811757/" title="link to post.title">RabbitMQ 总结</a></h2>
       <p class="excerpt">
     
-      安装前比较
-hexo：基于NodeJS
-hugo：基于go语言
+      最近在工作中因为要用到消息队列，所以简单学习了一下，把rabbitmq的官方文档学习了一遍，代码运行了一遍，收获颇丰，遂总结一下学到的这些知识点。
+关于角色
 
-安装过程简介1.（brew/git之前安装过了）安装npm2.安装nvm3.配置github pages
-总结在Mac上搭建HEXO遇到的坑
-坑一：Hexo官网上的安装命令是$ npm install -g hexo-cli，安装时不要忘记前面加上sudo，否则会因为权限问题报错。
-
-坑二：安装完成后，一直显示 hexo comma
+P:发布者（producer）是发布消息的应用程序。
+X：交换机（exchange）发布者只需要把消息发送给一个交换机。交换机非常简单，它一边从发布者方接收消息，一边把消息推送到队列。交换机必须知道如何处理它接收到的消息，是应该推送到指定的
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2017-11-20T16:23:18.000Z" class="post-list__meta--date date">2017-11-21</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2017/11/21/hexo/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/03/11/PythonMulti/" title="link to post.title">Python 多版本管理</a></h2>
-      <p class="excerpt">
-    
-      python有两个大的版本2.X和3.x， 而且这两个版本是不完全兼容的。所以就面临了版本管理的问题。常见的版本管理有以下工具：virtualenv, pyenv, anaconda. 下面分别介绍这三种的用法，最后作简单的总结。
-##1.virtualenv
-123456789pip3 install virtualenvvirtualenv --no-site-packages venvsou
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-03-10T16:23:18.000Z" class="post-list__meta--date date">2017-03-11</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/python/">python</a>
-</span><a class="btn-border-small" href="/2017/03/11/PythonMulti/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-07-27T08:00:24.000Z" class="post-list__meta--date date">2018-07-27</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/mq/">mq</a>
+</span><a class="btn-border-small" href="/2018/07/27/15325858811757/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
